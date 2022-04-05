@@ -51,12 +51,12 @@ function addStar(){
 
 Array(200).fill().forEach(addStar);
 
-const spaceTexture = new THREE.TextureLoader().load('./img/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('https://i.ibb.co/XbMNTK4/space.jpg');
 scene.background = spaceTexture;
 
 
 
-const aniketTexture = new THREE.TextureLoader().load('./img/aniket.jpg');
+const aniketTexture = new THREE.TextureLoader().load('https://i.ibb.co/ySBdSTM/aniket.jpg');
 const aniket = new THREE.Mesh(
   new THREE.BoxGeometry(4,4,4),
   new THREE.MeshBasicMaterial({ map: aniketTexture })
@@ -65,7 +65,7 @@ const aniket = new THREE.Mesh(
 scene.add(aniket);
 
 
-const earthTexture = new THREE.TextureLoader().load('./img/earth1.jpg');
+const earthTexture = new THREE.TextureLoader().load('https://i.ibb.co/h2bmCvf/earth1.jpg');
 const earth = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
   // new THREE.PointLight("white"),
